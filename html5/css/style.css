@@ -1,3 +1,30 @@
 body {
     font-family: 'Montserrat', sans-serif;
+    background-color: #0C2840;
+    font-size: 14px;
+    color: #FFFFFF;
 }
+
+h1 {
+    color: #A3BFBF;
+    font-weight: 700;
+}
+
+
+
+/* 
+.paragraph {
+    color: green;
+}
+
+p {
+    color: purple;
+}
+
+#main {
+    color: red;
+}
+
+#test #main {
+    color: blue;
+} */
