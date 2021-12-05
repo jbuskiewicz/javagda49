@@ -28,51 +28,50 @@
     <main>
         <h1>Kontakt</h1>
         <section>
-            <form action="" method="post">
+            <form action="" method="post" id="contactForm">
                 <label for="imie">
-                    Imie: <input type="text" id="imie" name="nameInput" placeholder="Podaj swoje imie" />
+                    <span>Imie:</span>
+                    <input type="text" id="imie" name="nameInput" placeholder="Podaj swoje imie" />
                 </label>
-                <br />
-                <br />
+
                 <label for="nazwisko">
-                    Nazwisko: <input type="text" id="nazwisko" name="lastNameInput" required />
+                    <span>Nazwisko:</span>
+                    <input type="text" id="nazwisko" name="lastNameInput" required />
                 </label>
-                <br />
-                <br />
+
                 <label for="email">
-                    Email: <input type="email" id="email" name="email" required />
+                    <span>Email:</span>
+                    <input type="email" id="email" name="email" required />
                 </label>
 
                 <!-- <input type="number" name="" id="" max="99" min="18" required> -->
-                <br />
-                <br />
-                <div>
+
+                <div id="musicSection">
                     <label for="rock">
-                        <input type="checkbox" name="rock" id="rock"> Rock
+                        <input type="checkbox" name="rock" id="rock"> <span>Rock</span>
                     </label>
-                    <br />
+
                     <label for="pop">
-                        <input type="checkbox" name="pop" id="pop"> Pop
+                        <input type="checkbox" name="pop" id="pop"> <span>Pop</span>
                     </label>
-                    <br />
+
                     <label for="jazz">
-                        <input type="checkbox" name="jazz" id="jazz"> Jazz
+                        <input type="checkbox" name="jazz" id="jazz"> <span>Jazz</span>
                     </label>
                 </div>
-                <br />
 
-                <div>
+
+                <div id="drinkSection">
                     <label for="coffee">
-                        Kawa <input type="radio" name="drink" id="coffee" value="coffee">
+                        <span>Kawa</span> <input type="radio" name="drink" id="coffee" value="coffee">
                     </label>
                     <label for="tea">
-                        Herbata <input type="radio" name="drink" id="tea" value="tea">
+                        <span>Herbata</span> <input type="radio" name="drink" id="tea" value="tea">
                     </label>
                 </div>
-                <br />
+
                 <label for="msg">
-                    Wiadomość
-                    <br />
+                    <span>Wiadomość</span>
                     <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Twoja wiadomość" required></textarea>
                 </label>
 
