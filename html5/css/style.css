@@ -286,3 +286,16 @@ p {
     color: blue;
 } */
 
+/* mobile-first -> min-width */
+@media screen and (min-width: 426px) {
+    h1 {
+        font-size: 4rem;
+    }
+}
+
+/* desktop-first -> max-width */
+@media screen and (max-width: 425px) {
+    h1 {
+        font-size: 1.2rem;
+    }
+}
