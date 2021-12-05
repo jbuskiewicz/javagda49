@@ -1,3 +1,10 @@
+/* 1rem to zawsze wartość font-size na root element (<html>) */
+
+html {
+    font-size: 10px; /* 1rem = 10px */
+    padding: 20px; /* NIE WCHODZI W SKŁAD JEDNOSTKI "rem" */
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: #0C2840;
@@ -68,12 +75,46 @@ header.topHeader ul li a:hover {
 h1 {
     color: #A3BFBF;
     font-weight: 700;
+    font-size: 2.4rem;
+    padding: 1rem;
+    margin-top: 20px;
 }
+
+/* odnosimy się do pierwszej litery tagu <h1> */
+h1::first-letter {
+    color: tomato;
+}
+
+/* dodawanie elementu przed naszym tagiem H1 (wewnątrz <h1> </h1>) */
+h1::before {
+    content: "- ";
+    color: black;
+}
+
+/* dodawanie elementu po naszym tagu H1 (wewnątrz <h1> </h1>) */
+h1::after {
+    content: '.';
+    color: red;
+}
+
+
 
 /* form */
 
 form#contactForm {
-    width: 50%;
+    width: 30rem;
+
+    /* jednostki */
+    /* px, %, pt - 1.33px, vh, vw */
+
+    /* vh - wysokość viewportu (ekranu), 100vh - 100% wysokości ekranu */
+    /* vw - szerokość viewportu (ekranu), 50vw - 50% szerokości ekranu */
+
+    /* em, rem */
+
+    /* em - font-size elementu nadrzędnego */
+    /* rem - font-size root element */
+    
 }
 
 form#contactForm input,
