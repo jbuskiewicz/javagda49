@@ -2,7 +2,7 @@
 
 html {
     font-size: 10px; /* 1rem = 10px */
-    padding: 20px; /* NIE WCHODZI W SKŁAD JEDNOSTKI "rem" */
+    /* padding: 20px; NIE WCHODZI W SKŁAD JEDNOSTKI "rem" */
 }
 
 body {
@@ -96,6 +96,20 @@ h1::after {
     content: '.';
     color: red;
 }
+
+/* main */
+
+main section p {
+    margin: 1rem 0;
+    font-size: 2rem;
+    padding: 0px 0.5rem;
+}
+
+main section p:first-of-type {
+    margin-top: 5rem;
+}
+
+/* main - end */
 
 
 
@@ -271,3 +285,4 @@ p {
 #test #main {
     color: blue;
 } */
+
